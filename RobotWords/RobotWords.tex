@@ -146,7 +146,7 @@ Computer Vision Engineer
   \item Assembly?
   \end{itemize}
 \end{frame}
-
+%----------------------------------------------------------------------------------------
 \begin{frame}
    \frametitle{What is the most important language in robotics?}
    \begin{figure}
@@ -154,7 +154,7 @@ Computer Vision Engineer
    \end{figure}
    \center{\huge{English!}}
  \end{frame}
-
+%----------------------------------------------------------------------------------------
 \begin{frame}
   \frametitle{So what is the most important skills of a roboticist?}
   \begin{figure}
@@ -168,7 +168,7 @@ Computer Vision Engineer
    \item Protecting humans from the robot forthcoming robot apocalypse?
    \end{itemize}
  \end{frame}
-
+%----------------------------------------------------------------------------------------
 \begin{frame}
    \frametitle{So what is the most important skills of a roboticist?}
    \begin{figure}
@@ -181,7 +181,7 @@ Computer Vision Engineer
      \item Not being afraid to give it a shot.
    \end{itemize}
  \end{frame}
-
+%----------------------------------------------------------------------------------------
 \begin{frame}
    \frametitle{What I've learned.}
    \begin{figure}
@@ -195,7 +195,7 @@ Computer Vision Engineer
      \item You start to sound like a pro. People will respect your opinion.
    \end{itemize}
  \end{frame}
-
+%----------------------------------------------------------------------------------------
 \begin{frame}
    \frametitle{What I've learned... about math}
    \begin{figure}
@@ -209,7 +209,7 @@ Computer Vision Engineer
      \item Remember, you don't have to do the math (proof, derivation, etc), you just need to translate it to code or English. 
    \end{itemize}
  \end{frame}
-
+%----------------------------------------------------------------------------------------
 \begin{frame}
    \frametitle{And another thing!}
    \begin{figure}
@@ -226,11 +226,174 @@ Computer Vision Engineer
 
    \end{itemize}
  \end{frame}
-
+%----------------------------------------------------------------------------------------
 \section{So let's learn some robot words to get you started.}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+   \frametitle{I brought my friend tapsterbot to help us.}
+   \begin{figure}
+     \includegraphics[width=0.7\linewidth]{tapster.jpg}
+   \end{figure}
+
+   \begin{itemize}
+   \item Tapsterbot is a free and open-source parallel robot. 
+   \item These types of robots are used for sorting tasks.
+   \item Tapsterbot is used to automatically test smart phones.
+   \item Cheap and easy to build. Just an arduino and a few servos.
+   \end{itemize}
+ \end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+   \frametitle{All Robots Have Three Basic Parts}
+   \begin{itemize}
+   \item \textbf{Sensors}
+     \begin{itemize}
+       \item Sense the world around the robot.
+       \item Just like your eyes, ears, nose, and skin.
+     \end{itemize}
+   \item \textbf{Actuators}
+     \begin{itemize}
+       \item Move the robot around. Motors, gears, levers, cams, etc.
+       \item Just like your muscles and bones.
+     \end{itemize}     
+   \item \textbf{Controllers} 
+     \begin{itemize}
+       \item Take input from sensors, reason about it, and decide what to do.
+       \item Just like your brain. 
+     \end{itemize}          
+   \end{itemize}     
+ \end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+   \frametitle{Let's look at tapsterbot}
+   \begin{figure}
+     \includegraphics[width=0.45\linewidth]{arduino.jpg}
+     \quad 
+     \includegraphics[width=0.25\linewidth]{hitec.jpg}
+   \end{figure}
+
+   \begin{itemize}
+   \item \textbf{Sensors}
+     \begin{itemize}
+       \item Eventually a camera on top.
+       \item Each servo has an encoder.
+     \end{itemize}
+   \item \textbf{Actuators}
+     \begin{itemize}
+       \item Hobby servos (servos have built in sensors).
+     \end{itemize}     
+   \item \textbf{Controllers} 
+     \begin{itemize}
+       \item Arduino connected to my computer.
+     \end{itemize}          
+   \end{itemize}     
+ \end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Other things robots usually have...}
+   \begin{figure}
+     \includegraphics[width=0.4\linewidth]{frc.jpg}
+   \end{figure}
+
+   \begin{itemize}
+   \item \textbf{Power Distribution}
+     \begin{itemize}
+       \item Different parts take different voltages, current but come from one battery.
+     \end{itemize}
+   \item \textbf{Digital IO}
+     \begin{itemize}
+       \item This board usually translates (talks) in different digital and analog formats.
+     \end{itemize}     
+   \item \textbf{Communications} 
+     \begin{itemize}
+       \item How do we control the robot remotely. Usually wifi.
+     \end{itemize}
+     \item On tapsterbot the Arduino does most of this stuff. 
+   \end{itemize}     
+ \end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Common Sensors}
+    
+   \begin{figure}
+     \includegraphics[width=0.2\linewidth]{limit.jpg}
+     \quad
+     \includegraphics[width=0.1\linewidth]{iphone.jpg}
+     \quad
+     \includegraphics[width=0.3\linewidth]{lidar.jpg}
+   \end{figure}
+   \begin{itemize}
+   \item \textbf{Encoders} - count how far something has moved (wheels).
+   \item \textbf{Cameras} - see the world, stereo cameras give depth.
+   \item \textbf{LIDAR} - Laser RADAR high fidelity 2D/3D maps.
+   \item \textbf{Limit Switch} - Just a switch. Off or On.
+   \item \textbf{Accelerometer} - Measures motion, can find gravity (down).
+   \item \textbf{Gyroscope} - Measure rotation.
+   \item \textbf{Magnetometers} - Can find North, metal stuff. 
+   \end{itemize}     
+ \end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Sensor Concepts}
+  \begin{figure}
+     \includegraphics[width=0.4\linewidth]{ptam.jpg}
+  \end{figure}
+
+   \begin{itemize}
+   \item \textbf{SLAM} - \href{http://www.youtube.com/watch?v=Y9HMn6bd-v8}{imultaneous localization and mapping.} Where am I?
+   \item \textbf{Pose Tracking} - Figure out x,y,z location and orientation.
+   \item \textbf{Sample Rate} - How fast? Measured in hertz (Hz). 
+   \item \textbf{State} - What is the current pose of the robot.
+   \item \textbf{Format} - What language does the sensor talk.
+   \item \textbf{Calibration} - Does the sensor value match the real world. 
+   \end{itemize}     
+ \end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Types of Actuators}
+  \begin{figure}
+     \includegraphics[width=0.2\linewidth]{linear.jpg}
+     \quad
+     \includegraphics[width=0.2\linewidth]{stepper.jpg}
+  \end{figure}
+   \begin{itemize}
+   \item \textbf{Things that look like motors} 
+     \begin{itemize}
+     \item \textbf{Motor} - A regular motor, might add an encoder.
+     \item \textbf{Stepper} - A motor with an encoder that let's you do precise rotation.
+     \item \textbf{Servo} - A motor with an encoder that turns a set number of degrees.
+     \end{itemize}
+   \item \textbf{Linear Actuator} - Motor that moves in a straight line. 
+     \begin{itemize}
+     \item \textbf{Pneumatics} - Linear actuators that move with air.
+     \item \textbf{Hydraulics} - Linear actuators that move with oil or water.
+     \end{itemize}     
+   \end{itemize}     
+ \end{frame}
+%----------------------------------------------------------------------------------------
+% \begin{frame}
+%   \frametitle{Actuator Concepts}
+%   \begin{figure}
+%      \includegraphics[width=0.2\linewidth]{linear.jpg}
+%      \quad
+%      \includegraphics[width=0.2\linewidth]{stepper.jpg}
+%   \end{figure}
+%    \begin{itemize}
+%    \item Robots that move around are classified by how they move.
+%    \item \textbf{Degrees of Freedom - DOF} robots are also described by the number of things that move on them. 
+
+%    \item \textbf{Linear Actuator} - Motor that moves in a straight line. 
+%      \begin{itemize}
+%      \item \textbf{Pneumatics} - Linear actuators that move with air.
+%      \item \textbf{Hydraulics} - Linear actuators that move with oil or water.
+%      \end{itemize}     
+%    \end{itemize}     
+%  \end{frame}
 
 
-% %----------------------------------------------------------------------------------------
+
+
+% 
 % \begin{frame}
 %   \frametitle{About the tutorial}
 %   \begin{itemize}
