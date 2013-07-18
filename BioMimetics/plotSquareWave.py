@@ -1,16 +1,3 @@
-# 
-# import numpy as np
-# import matplotlib.pyplot as plt
-
-# rate = 1.0/500.0
-# f = 100
-# t = np.linspace(0, 1, 1000, endpoint=False)
-# s1 = 3*signal.square(2*np.pi*f*t,duty=0.3)
-# plt.plot(t, s1, 'r-')
-# plt.ylim(-4, 4)
-# plt.show()
-# plt.gridon()
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import signal

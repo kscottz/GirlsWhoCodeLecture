@@ -44,7 +44,7 @@
 %\usetheme{Malmoe}
 %\usetheme{Marburg}
 %\usetheme{Montpellier}
-%\usetheme{PaloAlto}
+%\usetheme{PaloAlto}q
 %\usetheme{Pittsburgh}
 %\usetheme{Rochester}
 %\usetheme{Singapore}
@@ -65,9 +65,9 @@
 %\usecolortheme{lily}
 %\usecolortheme{orchid}
 %\usecolortheme{rose}
-\usecolortheme{seagull}
+%\usecolortheme{seagull}
 %\usecolortheme{seahorse}
-%\usecolortheme{whale}
+\usecolortheme{whale}
 %\usecolortheme{wolverine}
 
 %\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
@@ -99,11 +99,11 @@ bg= gray!30}
 bg= gray!15}
 \graphicspath{ {./images/}{./}{./timgs/}{./private/}}
 
-\title[RobotWords]{Biology was Robotics Before it was Cool.} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[BioBots]{Biology was Robotics Before it was Cool.} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{Katherine Scott} % Your name
 
-\institute[Computer Vision Engineer] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\institute[@kscottz] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 Computer Vision Engineer
 \medskip
@@ -199,6 +199,15 @@ Computer Vision Engineer
 \end{frame}
 %----------------------------------------------------------------------------------------
 \begin{frame}
+  \frametitle{}
+  \begin{figure}
+    \includegraphics[width=0.6\linewidth]{byb.png}
+  \end{figure}     
+  Some of my old lab mates wanted to educate students on neuroscience. They commericalized some of the technology so students could learn from it. They kindly donated materials for today!
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
   \frametitle{What about the inverse problem? Can we make roaches robots?}
   \begin{figure}
     \includegraphics[width=0.8\linewidth]{wind.jpg}
@@ -215,8 +224,6 @@ Computer Vision Engineer
     Limit switch.... 
   \end{center}
 \end{frame}
-
-
 %----------------------------------------------------------------------------------------
 \begin{frame}
   \frametitle{Can we hack into the roaches' sensors?}
@@ -233,7 +240,6 @@ Computer Vision Engineer
     \item Roughly 10-100Hz 
     \item Emulates the signal the neurons would generate. 
     \item Don't worry, the roach will be just fine, we'll leave him a lot of sensor.
-    \item These roaches live a pretty cozy life. 
     \end{itemize}
 \end{frame}
 %----------------------------------------------------------------------------------------
@@ -246,367 +252,88 @@ Computer Vision Engineer
     \item Control signals sent from phone via bluetooth.
     \item On the board bluetooth cpu gets the message, and generates a waveform.
     \item We then amplify it a bit and send it to the roach via leads. 
+    \item Roach says, gee, feels like something is there. 
   \end{itemize}
 \end{frame}
-%--------------
-
-
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%    \frametitle{What is the most important language in robotics?}
-%    \begin{figure}
-%      \includegraphics[width=0.5\linewidth]{corgis.jpg}
-%    \end{figure}
-%    \center{\huge{English!}}
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{So what is the most important skills of a roboticist?}
-%   \begin{figure}
-%      \includegraphics[width=0.5\linewidth]{robot-army.jpg}
-%    \end{figure}
-%    \begin{itemize}
-%    \item Mechanical Engineering?
-%    \item Electrical Engineering?
-%    \item Computer Science?
-%    \item Management?
-%    \item Protecting humans from the robot forthcoming robot apocalypse?
-%    \end{itemize}
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%    \frametitle{So what is the most important skills of a roboticist?}
-%    \begin{figure}
-%      \includegraphics[width=0.5\linewidth]{howdoishotweb.jpg}
-%    \end{figure}
-
-%    \begin{itemize}
-%      \item Asking the right question in the correct way.
-%      \item Finding and reading about a solution.
-%      \item Not being afraid to give it a shot.
-%    \end{itemize}
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%    \frametitle{What I've learned.}
-%    \begin{figure}
-%      \includegraphics[width=0.5\linewidth]{youngkat.jpg}
-%    \end{figure}
-
-%    \begin{itemize}
-%      \item Words have \textbf{specific} meaning. Learn the meaning.
-%      \item With these words you can ask (google) better questions. 
-%      \item These words encode scientific papers that you can read.
-%      \item You start to sound like a pro. People will respect your opinion.
-%    \end{itemize}
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%    \frametitle{What I've learned... about math}
-%    \begin{figure}
-%      \includegraphics[width=0.5\linewidth]{math.jpg}
-%    \end{figure}
-
-%    \begin{itemize}
-%    \item \textbf{Learn to skim scientific papers}. 
-%      \item Math is just another language. Learn the symbols to unlock the meaning.
-     
-%      \item Remember, you don't have to do the math (proof, derivation, etc), you just need to translate it to code or English. 
-%    \end{itemize}
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%    \frametitle{And another thing!}
-%    \begin{figure}
-%      \includegraphics[width=0.3\linewidth]{DontPanic.jpg}
-%      \quad 
-%      \includegraphics[width=0.3\linewidth]{rtfm.jpg}
-%    \end{figure}
-
-%    \begin{itemize}
-%    \item \textbf{DO NOT PANIC}
-%    \item \textbf{RTFM} READ THE FRAKING MANUAL. Really read it. Twice. 
-%    \item Break problems/solutions/papers down to the individual words, and work back up. 
-%    \item Ask for help.
-
-%    \end{itemize}
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \section{So let's learn some robot words to get you started.}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%    \frametitle{I brought my friend tapsterbot to help us.}
-%    \begin{figure}
-%      \includegraphics[width=0.7\linewidth]{tapster.jpg}
-%    \end{figure}
-
-%    \begin{itemize}
-%    \item Tapsterbot is a free and open-source parallel robot. 
-%    \item These types of robots are used for sorting tasks.
-%    \item Tapsterbot is used to automatically test smart phones.
-%    \item Cheap and easy to build. Just an arduino and a few servos.
-%    \end{itemize}
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%    \frametitle{All Robots Have Three Basic Parts}
-%    \begin{itemize}
-%    \item \textbf{Sensors}
-%      \begin{itemize}
-%        \item Sense the world around the robot.
-%        \item Just like your eyes, ears, nose, and skin.
-%      \end{itemize}
-%    \item \textbf{Actuators}
-%      \begin{itemize}
-%        \item Move the robot around. Motors, gears, levers, cams, etc.
-%        \item Just like your muscles and bones.
-%      \end{itemize}     
-%    \item \textbf{Controllers} 
-%      \begin{itemize}
-%        \item Take input from sensors, reason about it, and decide what to do.
-%        \item Just like your brain. 
-%      \end{itemize}          
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%    \frametitle{Let's look at tapsterbot}
-%    \begin{figure}
-%      \includegraphics[width=0.45\linewidth]{arduino.jpg}
-%      \quad 
-%      \includegraphics[width=0.25\linewidth]{hitec.jpg}
-%    \end{figure}
-
-%    \begin{itemize}
-%    \item \textbf{Sensors}
-%      \begin{itemize}
-%        \item Eventually a camera on top.
-%        \item Each servo has an encoder.
-%      \end{itemize}
-%    \item \textbf{Actuators}
-%      \begin{itemize}
-%        \item Hobby servos (servos have built in sensors).
-%      \end{itemize}     
-%    \item \textbf{Controllers} 
-%      \begin{itemize}
-%        \item Arduino connected to my computer.
-%      \end{itemize}          
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Other things robots usually have...}
-%    \begin{figure}
-%      \includegraphics[width=0.4\linewidth]{frc.jpg}
-%    \end{figure}
-
-%    \begin{itemize}
-%    \item \textbf{Power Distribution}
-%      \begin{itemize}
-%        \item Different parts take different voltages, current but come from one battery.
-%      \end{itemize}
-%    \item \textbf{Digital IO}
-%      \begin{itemize}
-%        \item This board usually translates (talks) in different digital and analog formats.
-%      \end{itemize}     
-%    \item \textbf{Communications} 
-%      \begin{itemize}
-%        \item How do we control the robot remotely. Usually wifi.
-%      \end{itemize}
-%      \item On tapsterbot the Arduino does most of this stuff. 
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Common Sensors}
-    
-%    \begin{figure}
-%      \includegraphics[width=0.2\linewidth]{limit.jpg}
-%      \quad
-%      \includegraphics[width=0.1\linewidth]{iphone.jpg}
-%      \quad
-%      \includegraphics[width=0.3\linewidth]{lidar.jpg}
-%    \end{figure}
-%    \begin{itemize}
-%    \item \textbf{Encoders} - count how far something has moved (wheels).
-%    \item \textbf{Cameras} - see the world, stereo cameras give depth.
-%    \item \textbf{LIDAR} - Laser RADAR high fidelity 2D/3D maps.
-%    \item \textbf{Limit Switch} - Just a switch. Off or On.
-%    \item \textbf{Accelerometer} - Measures motion, can find gravity (down).
-%    \item \textbf{Gyroscope} - Measure rotation.
-%    \item \textbf{Magnetometers} - Can find North, metal stuff. 
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Sensor Concepts}
-%   \begin{figure}
-%      \includegraphics[width=0.4\linewidth]{ptam.jpg}
-%   \end{figure}
-
-%    \begin{itemize}
-%    \item \textbf{SLAM} - \href{http://www.youtube.com/watch?v=Y9HMn6bd-v8}{imultaneous localization and mapping.} Where am I?
-%    \item \textbf{Pose Tracking} - Figure out x,y,z location and orientation.
-%    \item \textbf{Sample Rate} - How fast? Measured in hertz (Hz). 
-%    \item \textbf{State} - What is the current pose of the robot.
-%    \item \textbf{Format} - What language does the sensor talk.
-%    \item \textbf{Calibration} - Does the sensor value match the real world. 
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Types of Actuators}
-%   \begin{figure}
-%      \includegraphics[width=0.2\linewidth]{linear.jpg}
-%      \quad
-%      \includegraphics[width=0.2\linewidth]{stepper.jpg}
-%   \end{figure}
-%    \begin{itemize}
-%    \item \textbf{Things that look like motors} 
-%      \begin{itemize}
-%      \item \textbf{Motor} - A regular motor, might add an encoder.
-%      \item \textbf{Stepper} - A motor with an encoder that let's you do precise rotation.
-%      \item \textbf{Servo} - A motor with an encoder that turns a set number of degrees.
-%      \end{itemize}
-%    \item \textbf{Linear Actuator} - Motor that moves in a straight line. 
-%      \begin{itemize}
-%      \item \textbf{Pneumatics} - Linear actuators that move with air.
-%      \item \textbf{Hydraulics} - Linear actuators that move with oil or water.
-%      \end{itemize}     
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Actuator Concepts}
-%   \begin{figure}
-%      \includegraphics[width=0.4\linewidth]{6DOF.png}
-%      \quad
-%      \includegraphics[width=0.4\linewidth]{gripper.jpg}
-%   \end{figure}
-%    \begin{itemize}
-%    \item Robots that move around are classified by how they move.
-%    \item \textbf{Degrees of Freedom - DOF} robots are also described by the number of things that move on them. 
-%    \item \textbf{End Effector} is a fancy word for a robotic hand. 
-%    \item How many degrees of freedom in tapsterbot?
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Controllers - This is where the magic happens.}
-%   \begin{figure}
-%      \includegraphics[width=0.4\linewidth]{kinematics.png}
-%   \end{figure}
-%    \begin{itemize}
-%    \item We use kinematic equations to relate points in the world to actuator positions. 
-%    \item \textbf{Forward Kinematics} - Forward kinematics tell us where the robot will be if we move each motor a certain amount. 
-%    \item \textbf{Inverse Kinematics}  - Inverse Kinematics tell us where to put the motors to get the robot to a desired position. 
-%     \item We often use physics and linear algebra (matrices) to figure this stuff out. 
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Controllers - Tapsterbot}
-%   \begin{figure}
-%      \includegraphics[width=0.4\linewidth]{deltamath.png}
-%      \quad
-%     \includegraphics[width=0.4\linewidth]{delta.png}
-%   \end{figure}
-%  REMEMBER! DO NOT PANIC!
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{But let's see how that really works!}
-%   \begin{figure}
-%      \includegraphics[width=0.8\linewidth]{emacs.png}
-%    \end{figure}
-%  \end{frame}
-
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Controllers - More Fancy Words}
-%   \begin{figure}
-%      \includegraphics[width=0.4\linewidth]{caged.jpg}
-%      \quad
-%      \includegraphics[width=0.4\linewidth]{rethink.jpg}
-%   \end{figure}
-%    \begin{itemize}
-%    \item \textbf{Closed-Loop Control} - We move the robot a bit, we check encoders, we move again. 
-%    \item \textbf{Open-Loop Control} - We just move the actuators. If they slip or we hit something too bad. 
-%    \item \textbf{PID Controller}  - Proportional Integral Derivative. An algorithm that uses calculus to do closed loop control. 
-%     \item \textbf{Kalman Filter} a way of estimating ``state'' given noisy measurements. 
-%    \end{itemize}     
-%  \end{frame}
-
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Map Building and Path Planning}
-%   \begin{figure}
-%      \includegraphics[width=0.4\linewidth]{suboptimal.png}
-%   \end{figure}
-%    \begin{itemize}
-%   \item \textbf{Mapping} is what allows a robot to plan a path. Map data comes from sensors or knowledge. 
-%    \item \textbf{Path Planning} - is the general name for the algorithms that help robots go from one point to another.
-
-%    \end{itemize}     
-%  \end{frame}
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Mapping / Path Planning}
-%   \begin{figure}
-%      \includegraphics[width=0.2\linewidth]{overlord.jpg}
-%   \end{figure}
-%   \center{\href{http://www.youtube.com/watch?v=GPOe6uDOS_Q}{Roomba Path Planning}}
-%    \begin{itemize}
-%    \item The best way to get from A to B is not always a line. Stuff gets in your way.
-%    \item Path planning might be done to avoid \href{http://vimeo.com/20095999}{``singularies''} where our math does weird stuff.   
-%    \item \textbf{Dead Reckoning} is a simple path planning algorithm. Basically keep a list of heading and distance traveled. 
-%    \item What happens when we move one tapsterbot motor at a time versus all three at once? 
-%    \end{itemize}     
-%  \end{frame}
-
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{High Level Behavior}
-%   \begin{figure}
-%      \includegraphics[width=0.4\linewidth]{statemachine.png}
-%   \end{figure}
-%   \center{\textit{A turnstile state machine,two states, two inputs.}}
-%    \begin{itemize}
-%      \item For beginners \textbf{finite state machines} are a good way to build up complex behaviors. 
-%      \item State Machines have \textbf{states} where the robot performs one set of behaviors. 
-%     \item State Machines also have \textbf{inputs} that cause \textbf{transitions} between states. 
-%     \item State Machines are a great way to break up and think about problems.
-%    \end{itemize}     
-%  \end{frame}
-
-% %----------------------------------------------------------------------------------------
-% \begin{frame}
-%   \frametitle{Hey, Let's Write Some Python Code for Tapsterbot}
-%   Let's create three states
-%   \begin{itemize}
-%   \item \textbf{WAIT} - Do nothing. 
-%   \item \textbf{DANCE} - Swing around.
-%   \item \textbf{PULL-UP} - Do some pull ups.
-%   \end{itemize}
-%   And tie those states to some inputs from a leap motion.
-%   \begin{itemize}
-%   \item Hand is open, let's do pull up.
-%   \item Hand is closed, let's dance. 
-%   \item Hand is not there, wait
-%   \end{itemize}
-  
-%  \end{frame}
-
-
-% %------------------------------------------------
-
-% \begin{frame}
-% \begin{figure}
-%   \includegraphics[width=0.4\linewidth]{katpr2.jpg}
-% \end{figure}
-% \Huge{\centerline{go hug a robot}}
-% \end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \huge{So should we give it a try?}
+\end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Could we take this to the next level?}
+  \begin{figure}
+    \href{http://www.youtube.com/watch?v=R-IzkGA9hTc}{\includegraphics[width=0.5\linewidth]{autopilot.jpg}}
+  \end{figure}     
+\end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{What are the parts to getting this done?}
+   \textit{\textbf{DO NOT PANIC.} Break the problem down to little chunks and solve each chunk.}
+  \begin{itemize}
+    \item Find a bluetooth library to ``talk'' to the roach backpack.
+    \item Find a library that can get images from the kinect.
+    \item \href{http://www.simplecv.org}{Write some code to get the roach position / orientation.}
+    \item Write some code to find the line.
+    \item Write some code that figures out the difference between the roach and the line.
+    \item Figure out a way to relate that difference to stimulation.
+  \end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Roaches are just the tip of the iceberg...}
+  \begin{figure}
+    \includegraphics[width=0.35\linewidth]{stereo.jpg}
+    \quad
+    \includegraphics[width=0.35\linewidth]{eyes.jpg}
+  \end{figure}     
+  Stereo vision is something we use everyday, why not robots?
+\end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Roaches are just the tip of the iceberg...}
+  \begin{figure}
+    \includegraphics[width=0.35\linewidth]{sonar.jpg}
+    \quad
+    \includegraphics[width=0.35\linewidth]{bat.jpg}
+  \end{figure}     
+  Bats get around with sonar, why not robots?
+\end{frame}
 
 %----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Roaches are just the tip of the iceberg...}
+  \begin{figure}
+    \includegraphics[width=0.35\linewidth]{robohand.jpg}
+    \quad
+    \includegraphics[width=0.35\linewidth]{hand.jpg}
+  \end{figure}     
+ We can figure out stuff with our hands? Why not robots?
+\end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{The best part about robotics.}
+  \begin{figure}
+    \includegraphics[width=0.5\linewidth]{chained.jpg}
+  \end{figure}     
+  You'll never be chained to a desk. You'll be working with every engineering discipline, biologists, psychologists, and designers. It really is a true interdisciplinary field. 
+\end{frame}
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{GO BUILD ROBOTS!}
+  Here are a few resources to get you started!
+  \begin{itemize}
+    \item \href{http://www.backyardbrains.com}{Back Yard Brains}
+    \item \href{http://store.iheartengineering.com/robots/turtlebot.html}{I Heart Robotics}
+    \item \href{http://www.usfirst.org/roboticsprograms/frc}{FIRST Robotics Competition}
+    \item \href{http://www.ros.org/wiki/}{Robot Operating System (ROS)}
+    \item \href{http://nodebots.io/}{Nodebots!}
+    \item \href{https://github.com/hugs/tapsterbot}{Build a Tapsterbot}
+    \item \href{http://hackerspaces.org/wiki/List_of_Hacker_Spaces}{GO VISIT A HACKER SPACE.}
+  \end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------------
+
 
 \end{document} 
